@@ -1,0 +1,118 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - 'app/views/**/*'
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'log/**/*'
+    - 'node_modules/**/*'
+    - 'public/**/*'
+    - 'scripts/**/*'
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - '.git/**/*'
+    - 'spec/fixtures/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+  Include:
+    - 'config.ru'
+    - 'Gemfile'
+    - 'Guardfile'
+    - 'Rakefile'
+Layout/AlignHash:
+  EnforcedHashRocketStyle:
+    - key
+    - table
+  EnforcedColonStyle:
+    - key
+    - table
+Layout/ClassStructure:
+  Enabled: true
+  Categories:
+    module_inclusion:
+      - include
+      - prepend
+      - extend
+  ExpectedOrder:
+    - module_inclusion
+    - constants
+    - public_class_methods
+    - initializer
+    - instance_methods
+    - protected_methods
+    - private_methods
+Layout/EndOfLine:
+  EnforcedStyle: lf
+Layout/TrailingWhitespace:
+  AllowInHeredoc: true
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*.rb'
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+    - Guardfile
+Metrics/LineLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+    - Guardfile
+Naming/FileName:
+  Exclude:
+    - 'Gemfile'
+    - 'Guardfile'
+    - 'Rakefile'
+Naming/PredicateName:
+  # Method define macros for dynamically generated method.
+  MethodDefinitionMacros:
+    - define_method
+    - define_singleton_method
+    - def_node_matcher
+    - def_node_search
+StringLiterals:
+  EnforcedStyle: single_quotes
+  Exclude:
+    - './*_helper.rb'
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'app/helpers/application_helper.rb'
+    - 'app/mailers/application_mailer.rb'
+    - 'app/models/application_record.rb'
+    - 'config/application.rb'
+Style/ExpandPathArguments:
+  Exclude:
+    - 'bin/rails'
+    - 'bin/rake'
+Style/FormatStringToken:
+  # Because we parse a lot of source codes from strings. Percent arrays
+  # look like unannotated format string tokens to this cop.
+  Exclude:
+    - spec/**/*
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/IpAddresses:
+  # The test for this cop includes strings that would cause offenses
+  Exclude:
+    - spec/rubocop/cop/style/ip_addresses_spec.rb
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'
+Style/RedundantBegin:
+  Exclude:
+    - 'bin/yarn'
+Style/StderrPuts:
+  Exclude:
+    - 'bin/yarn'
+Style/StringLiterals:
+  Exclude:
+    - 'bin/yarn'
+    - 'config/environments/production.rb'
+    - 'config/puma.rb'
+    - 'test/application_system_test_case.rb'

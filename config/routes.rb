@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'main/index'
   get "/companies", to: "companies#index"
   post "/companies", to: "companies#create"
   get "/companies/new", to: "companies#new", as: 'new_company'
@@ -7,4 +8,6 @@ Rails.application.routes.draw do
   patch "/companies/:id", to: "companies#update"
   put "/companies/:id", to: "companies#update"
   delete "/companies/:id", to: "companies#destroy"
+
+  root 'main#index'
 end

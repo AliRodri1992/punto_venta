@@ -1,8 +1,5 @@
 require 'spec_helper'
 require 'capybara/rspec'
-require 'support/database_cleaner'
-require 'support/shoulda_matchers'
-require 'support/factory_bot_rails'
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
@@ -21,4 +18,11 @@ RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end

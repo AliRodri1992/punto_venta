@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe MainController, type: :controller do
 
+  it { should route(:get, '/').to(action: :index) }
+
   describe "GET #index" do
     it "returns http success" do
       get :index

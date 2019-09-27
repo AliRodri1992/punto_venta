@@ -10,6 +10,8 @@ gem 'puma', '3.12.1'
 gem 'rails', '5.2.3'
 gem 'turbolinks', '5.2.1'
 gem 'uglifier', '4.2.0'
+gem 'bootstrap', '4.3.1'
+gem 'jquery-rails', '4.3.5'
 
 group :development, :test do
   gem 'byebug', '11.0.1', platforms: %i[mri mingw x64_mingw]

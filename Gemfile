@@ -4,24 +4,24 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 gem 'bootsnap', '1.4.5', require: false
+gem 'bootstrap', '4.3.1'
 gem 'jbuilder', '2.9.1'
+gem 'jquery-rails', '4.3.5'
 gem 'pg', '1.1.4'
 gem 'puma', '3.12.1'
 gem 'rails', '5.2.3'
+gem 'slim-rails', '3.2.0'
 gem 'turbolinks', '5.2.1'
 gem 'uglifier', '4.2.0'
-gem 'bootstrap', '4.3.1'
-gem 'jquery-rails', '4.3.5'
-gem 'slim-rails', '3.2.0'
 
 group :development, :test do
   gem 'byebug', '11.0.1', platforms: %i[mri mingw x64_mingw]
   gem 'database_cleaner', '1.7.0'
   gem 'factory_bot_rails', '5.1.0'
+  gem 'ffaker', '2.12.0'
   gem 'mry', '0.59.0.0'
   gem 'rspec-rails', '3.8.2'
   gem 'rubocop', '0.74.0'
-  gem 'ffaker', '2.12.0'
 end
 
 group :development do

@@ -18,5 +18,16 @@ RSpec.describe CompaniesController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
     end
+
+    context 'when name is invalid' do
+      it 'renders the page with error' do
+        company = create(:company)
+
+        post :create, params: { company: { name: nil, website: company.website } }
+
+        expect(response).to render_template(:new)
+        expect(flash[:notice]).to match(nil)
+      end
+    end
   end
 end

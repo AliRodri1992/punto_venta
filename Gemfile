@@ -20,6 +20,7 @@ group :development, :test do
   gem 'factory_bot_rails', '5.1.0'
   gem 'ffaker', '2.12.0'
   gem 'mry', '0.59.0.0'
+  gem 'rails-controller-testing'
   gem 'rspec-rails', '3.8.2'
   gem 'rubocop', '0.74.0'
 end

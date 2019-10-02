@@ -1,8 +1,13 @@
 class CompaniesController < ApplicationController
-  before_action :set_company, only: %w[show, edit, update, destroy]
+  before_action :set_company, only: [:show, :edit, :update, :destroy]
 
   def index
     @company = Company.first
+    unless @company.blank?
+      redirect_to @company
+    else
+      redirect_to new_company_path
+    end
   end
 
   def show; end
@@ -43,6 +48,8 @@ class CompaniesController < ApplicationController
   end
 
   def set_company
+    puts "\n\n\nENNNNNNNNNNNNN"
     @company = Company.find(params[:id])
+    puts "Empresa: #{@company.name}"
   end
 end

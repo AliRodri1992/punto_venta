@@ -8,13 +8,16 @@ div.row
 div.row
   div.col-lg-12
     table.table.table-bordered
-      thead
-        tr
-          th scope='col' Nombre
-          th scope='col' Sitio Web
       tbody
         tr
+          td.text-center colspan="2"
+            - if @company.logo.attached?
+              = image_tag @company.thumbnail, class: "img-fluid img-thumbnail rounded", alt: "Responsive image"
+        tr
+          td Name
           td scope='row'
             = @company.name
+        tr
+          td Website
           td scope='row'
             = @company.website

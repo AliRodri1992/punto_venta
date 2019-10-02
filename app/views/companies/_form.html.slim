@@ -1,13 +1,17 @@
 = form_with model: @company, local: true do |form|
   div.form-group.row
-    div.col-lg-6
+    .col-lg-6.col-sm-12
       = form.label :name
       = form.text_field :name, class: 'form-control', placeholder: 'Ingrese el nombre de la empresa.'
-    div.col-lg-6
+    .col-lg-6.col-sm-12
       = form.label :website
       = form.text_field :website, class: 'form-control', placeholder: 'Ingrese el sitio web de la empresa.'
   div.form-group.row
-    div.col-lg-12
+    .col-lg-6.col-sm-12
+      = form.label :logo
+      = form.file_field :logo, class: 'form-control-file'
+  div.form-group.row
+    .col-lg-12
       - if action == 'edit'
         a.btn.btn-secondary  href="/companies/#{@company.id}" Atras
       = form.submit 'Save', class: 'btn btn-primary'

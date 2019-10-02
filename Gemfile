@@ -14,6 +14,9 @@ gem 'slim-rails', '3.2.0'
 gem 'turbolinks', '5.2.1'
 gem 'uglifier', '4.2.0'
 
+gem 'image_processing'
+gem 'mini_magick'
+
 group :development, :test do
   gem 'byebug', '11.0.1', platforms: %i[mri mingw x64_mingw]
   gem 'database_cleaner', '1.7.0'

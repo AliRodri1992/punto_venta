@@ -5,18 +5,18 @@ ruby '2.6.3'
 
 gem 'bootsnap', '1.4.5', require: false
 gem 'bootstrap', '4.3.1'
+gem 'image_processing'
 gem 'jbuilder', '2.9.1'
 gem 'jquery-rails', '4.3.5'
+gem 'jquery-turbolinks'
+gem 'mini_magick'
 gem 'pg', '1.1.4'
 gem 'puma', '3.12.1'
 gem 'rails', '5.2.3'
+gem 'rails-i18n'
 gem 'slim-rails', '3.2.0'
 gem 'turbolinks', '5.2.1'
 gem 'uglifier', '4.2.0'
-gem 'jquery-turbolinks'
-gem 'image_processing'
-gem 'mini_magick'
-gem 'rails-i18n'
 
 group :development, :test do
   gem 'byebug', '11.0.1', platforms: %i[mri mingw x64_mingw]

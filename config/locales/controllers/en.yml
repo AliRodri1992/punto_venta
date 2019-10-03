@@ -1,0 +1,10 @@
+en:
+  flash_message:
+    controllers:
+      companies:
+        save:
+          success: "Successfully saved company."
+          error: "Errors found. Please check."
+        update:
+          success: "Successfully updated company."
+          error: "Errors found. Please check."

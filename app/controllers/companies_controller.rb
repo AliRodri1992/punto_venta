@@ -21,25 +21,27 @@ class CompaniesController < ApplicationController
   def create
     @company = Company.new(company_params)
     if @company.save
-      flash[:success] = ""
+      flash[:success] = t('flash_message.controllers.companies.save.success')
       redirect_to companies_path
     else
+      flash[:error] = t('flash_message.controllers.companies.save.error')
       render :new
     end
   end
 
   def update
     if @company.update(company_params)
-      flash[:success] = ""
+      flash[:success] = t('flash_message.controllers.companies.update.success')
       redirect_to companies_path
     else
+      flash[:error] = t('flash_message.controllers.companies.update.error')
       render :edit
     end
   end
   
   def destroy
     @company.destroy
-    flash[:success] = ""
+    flash[:success] = t('flash_message.controllers.companies.destroy.success')
   end
 
   private
@@ -48,8 +50,6 @@ class CompaniesController < ApplicationController
   end
 
   def set_company
-    puts "\n\n\nENNNNNNNNNNNNN"
     @company = Company.find(params[:id])
-    puts "Empresa: #{@company.name}"
   end
 end

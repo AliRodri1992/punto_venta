@@ -1,0 +1,48 @@
+$primary_color: #04395F;
+$default_color: #737373;
+$background_color: #EFEFEF;
+$container_color: whitesmoke;
+$border_radius: 0px;
+$odd_row_color: #dedede;
+$font_color: #4A4A4A;
+$header_color: $font_color;
+$nav_font_color: #D8D8D8;
+$input_border_color: #DCDCDC;
+$hr_color: #D1D1D1;
+
+$danger_background_color: #d9534f;
+$danger_border_color: #d43f3a;
+$danger_light_background: #f2dede;
+
+$warning_background_color: #fcf8e3;
+$warning_color: #d6963e;
+
+$info_color: #31708f;
+$info_background_color: #d9edf7;
+$success_color: #35AD2E;
+
+html, body {
+  width: 100%;
+  height: 90%;
+}
+
+body {
+  background: $background_color;
+  font-family: system-ui, sans-serif;
+  color: $font_color;
+  letter-spacing: 0;
+  // line-height: 36px;
+}
+
+h1, h2, h3, h4, h5 {
+  // color: $background_color;
+  color: $header_color;
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  // text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 99% !important;
+}

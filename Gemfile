@@ -13,7 +13,7 @@ gem 'rails', '5.2.3'
 gem 'slim-rails', '3.2.0'
 gem 'turbolinks', '5.2.1'
 gem 'uglifier', '4.2.0'
-
+gem 'jquery-turbolinks'
 gem 'image_processing'
 gem 'mini_magick'
 

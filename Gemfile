@@ -16,6 +16,7 @@ gem 'uglifier', '4.2.0'
 gem 'jquery-turbolinks'
 gem 'image_processing'
 gem 'mini_magick'
+gem 'rails-i18n'
 
 group :development, :test do
   gem 'byebug', '11.0.1', platforms: %i[mri mingw x64_mingw]

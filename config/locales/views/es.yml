@@ -1,0 +1,32 @@
+es:
+  main_page:
+    header:
+      welcome: "¡Bienvenido!"
+    index:
+      services_html: "Brindamos algunos servicios sofisticados a <em> buenas personas </em>."
+    language:
+      spanish: 'Español (Latinoamérica)'
+      english: 'Ingles'
+  helpers:
+    link:
+      back: 'Atras'
+    select:
+      prompt: Por favor selecciona
+    submit:
+      create: 'Crear'
+      submit: 'Guardar'
+      update: 'Actualizar'
+      edit: 'Editar'
+    tab:
+      home: 'Pagina Principal'
+      models:
+        companies:
+          edit: 'Editar empresa'
+          information: 'Información de la empresa'
+          register: 'Registrar empresa'
+          show: 'Tu empresa'
+  placeholder:
+    models:
+      companies:
+        name: 'Ingrese el nombre de la empresa.'
+        website: 'Ingrese el sitio web de la empresa'

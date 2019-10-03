@@ -8,6 +8,7 @@ ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
     elsif form_fields.include? e.node_name
       e['class'] = %(#{e['class']} is-invalid)
       if instance.error_message.kind_of?(Array)
+        puts "#{instance.error_message}"
         field_error_message = instance.error_message.uniq.join('<br>')
       else
         field_error_message = instance.error_message

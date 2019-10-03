@@ -1,0 +1,29 @@
+en:
+  main_page:
+    header:
+      welcome: "Welcome!"
+    index:
+      services_html: "We provide some fancy services to <em>good people</em>."
+  helpers:
+    link:
+      back: 'Back'
+    tab:
+      home: 'Home'
+      models:
+        companies:
+          edit: 'Edit company'
+          information: 'Company information'
+          register: 'Register company'
+          show: 'Your company'
+    select:
+      prompt: 'Please select'
+    submit:
+      create: 'Create'
+      submit: 'Save'
+      update: 'Update'
+      edit: 'Edit'
+  placeholder:
+    models:
+      companies:
+        name: "Enter the company's name."
+        website: "Enter the company's website."

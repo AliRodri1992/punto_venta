@@ -1,17 +1,17 @@
 = form_with model: @company, local: true do |form|
   div.form-group.row
     .col-lg-6.col-sm-12
-      = form.label :name
-      = form.text_field :name, class: 'form-control', placeholder: 'Ingrese el nombre de la empresa.'
+      = form.label :name, t('activerecord.attributes.companies.name')
+      = form.text_field :name, class: 'form-control', placeholder: t('placeholder.models.companies.name')
     .col-lg-6.col-sm-12
-      = form.label :website
-      = form.text_field :website, class: 'form-control', placeholder: 'Ingrese el sitio web de la empresa.'
+      = form.label :website, t('activerecord.attributes.companies.website')
+      = form.text_field :website, class: 'form-control', placeholder: t('placeholder.models.companies.website')
   div.form-group.row
     .col-lg-6.col-sm-12
-      = form.label :logo
+      = form.label :logo, t('activerecord.attributes.companies.logo')
       = form.file_field :logo, class: 'form-control-file'
   div.form-group.row
     .col-lg-12
       - if action == 'edit'
-        a.btn.btn-secondary  href="/companies/#{@company.id}" Atras
-      = form.submit 'Save', class: 'btn btn-primary'
+        = link_to t('helpers.link.back'), companies_path(id: @company.id), class: 'btn btn-secondary'
+      = form.submit btn, class: 'btn btn-primary'

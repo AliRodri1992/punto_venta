@@ -1,0 +1,24 @@
+- provide(:title, t('helpers.tab.models.companies.show'))
+div.row
+  div.col-lg-6.col-sm-12
+    h1 = t('helpers.tab.models.companies.information')
+  div.col-lg-6.col-sm-12.d-flex
+    div.ml-auto
+      = link_to t('helpers.link.back'), root_path, class: 'btn btn-primary'
+      = link_to t('helpers.submit.edit'), edit_company_path(@company.id), class: 'btn btn-primary'
+div.row
+  div.col-lg-12
+    table.table.table-bordered
+      tbody
+        tr
+          td.text-center colspan="2"
+            - if @company.logo.attached?
+              = image_tag @company.thumbnail, class: "img-fluid img-thumbnail rounded", alt: "Responsive image"
+        tr
+          td = t('activerecord.attributes.companies.name')
+          td scope='row'
+            = @company.name
+        tr
+          td = t('activerecord.attributes.companies.website')
+          td scope='row'
+            = @company.website

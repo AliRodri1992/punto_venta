@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    attributes:
+      companies:
+        name: 'Name'
+        logo: 'Logo'
+        website: 'Website'
+    errors:
+      models:
+        companies:
+          attributes:
+            name:
+              blank: ''
+    models:
+      companies:
+        one: 'Company'
+        other: 'Companies'

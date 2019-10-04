@@ -1,0 +1,19 @@
+es:
+  activerecord:
+    attributes:
+      companies:
+        name: 'Nombre'
+        logo: 'Logotipo'
+        website: 'Sitio Web'
+    errors:
+      models:
+        companies:
+          attributes:
+            name:
+              blank: 'Nombre no puede estar vacío.'
+            website:
+              blank: 'Sitio web no puede estar vacío.'
+    models:
+      companies:
+        one: 'Empresa'
+        other: 'Empresas'

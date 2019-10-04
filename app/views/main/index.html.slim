@@ -1,0 +1,6 @@
+- provide(:title,  t('helpers.tab.home'))
+h1 = t 'main_page.header.welcome'
+p = t 'main_page.index.services_html'
+= link_to t('main_page.language.spanish'), root_path(locale: :es)
+= link_to t('main_page.language.english'), root_path(locale: :en)
+= link_to t('activerecord.models.companies.one'), companies_path

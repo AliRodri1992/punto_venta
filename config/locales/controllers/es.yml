@@ -1,0 +1,10 @@
+es:
+  flash_message:
+    controllers:
+      companies:
+        save:
+          success: "Empresa creada exitosamente."
+          error: "Se han encontrado errores. Favor de verificar."
+        update:
+          success: "Empresa actualizada exitosamente."
+          error: "Se han encontrado errores. Favor de verificar."

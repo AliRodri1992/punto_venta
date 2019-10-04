@@ -6,5 +6,7 @@ class CreateCompanies < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+
+    Company.create(name: 'default', website: 'www.default.com')
   end
 end

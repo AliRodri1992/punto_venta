@@ -3,10 +3,10 @@ class CompaniesController < ApplicationController
 
   def index
     @company = Company.first
-    unless @company.blank?
+    if @company.name != 'default'
       redirect_to @company
     else
-      redirect_to new_company_path
+      redirect_to edit_company_path(@company)
     end
   end
 

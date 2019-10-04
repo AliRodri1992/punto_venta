@@ -108,16 +108,16 @@ es:
   errors:
     format: "%{attribute} %{message}"
     messages:
-      accepted: debe ser aceptado
-      blank: no puede estar en blanco
-      confirmation: no coincide
-      empty: no puede estar vacío
-      equal_to: debe ser igual a %{count}
-      even: debe ser un número par
-      exclusion: está reservado
-      greater_than: debe ser mayor que %{count}
-      greater_than_or_equal_to: debe ser mayor o igual que %{count}
-      inclusion: no está incluido en la lista
+      accepted: debe ser aceptado.
+      blank: No puede estar vacío.
+      confirmation: No coincide.
+      empty: No puede estar vacío.
+      equal_to: Debe ser igual a %{count}.
+      even: Debe ser un número par.
+      exclusion: Está reservado.
+      greater_than: Debe ser mayor que %{count}.
+      greater_than_or_equal_to: Debe ser mayor o igual que %{count}
+      inclusion: No está incluido en la lista
       invalid: es inválido
       less_than: debe ser menor que %{count}
       less_than_or_equal_to: debe ser menor o igual que %{count}

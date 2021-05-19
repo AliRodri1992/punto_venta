@@ -6,7 +6,7 @@ ruby '2.6.3'
 gem 'bootsnap', '1.4.5', require: false
 gem 'jbuilder', '2.9.1'
 gem 'pg', '1.1.4'
-gem 'puma', '3.12.1'
+gem 'puma', '4.3.8'
 gem 'rails', '5.2.3'
 gem 'turbolinks', '5.2.1'
 gem 'uglifier', '4.2.0'
